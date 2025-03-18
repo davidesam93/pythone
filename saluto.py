@@ -1,3 +1,4 @@
 #saluto.py
 
-print("Ciao, benvenuto nel mio repository!")
+nome= "Davide Sambughi"
+print ( "Ciao, mi chiamo ", nome)
