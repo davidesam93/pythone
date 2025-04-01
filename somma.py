@@ -5,3 +5,4 @@ v2= int (valore_2)
 somma= v1 +v2
 
 print("La somma è ",somma)
+
