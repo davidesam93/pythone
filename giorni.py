@@ -2,13 +2,7 @@
 #scrivete un programma per tradurre da 1 a 7 nei nomi della settimana
 giorno_scelto=int(input("dammi un numero tra 1 e 7: "))
 
-GIORNI=  ("lunedi   ",#09
-          "martedi  ",#18
-          "mercoledi",#27
-          "giovedi  ",#36
-          "venerdi  ",#45
-          "sabato   ",#54
-          "domenica ")#63
+GIORNI=  ("lunedi   martedi   mercoledigiovedi  venerdi  sabato   domenica ")#63
 
 p= (giorno_scelto-1)*9
 
