@@ -8,7 +8,7 @@ SCAGLIONE1=28000
 SCAGLIONE2=50000
 
 VA1=int (6440)
-VA2= int (7700)
+VA2= int (14140)
 imposta=0
 importo=0
 
