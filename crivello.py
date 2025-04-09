@@ -30,7 +30,7 @@ print(insieme2)
  
 
 for c in insieme2:
-    if c!=3 or c%3!=0: #togli numeri divisibili per 3
+    if c==3 or c%3!=0: #togli numeri divisibili per 3
        insieme3.append(c)
 
 set_finale= set(insieme3)
