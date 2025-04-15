@@ -13,10 +13,10 @@ def crivello(n):
     print(naturali)
     print(len(naturali))
 crivello(int(input("Scegli un numero: ")))
+
 """
 
 n=100
-
 insieme= set(range(n+1))
 insieme2=list()
 insieme3=list()
@@ -25,9 +25,6 @@ set_finale= set(insieme3)
 for i in insieme:
     if i==2 or i%2!=0: # togli numeri pari
        insieme2.append(i)
-
-print(insieme2)
- 
 
 for c in insieme2:
     if c==3 or c%3!=0: #togli numeri divisibili per 3
