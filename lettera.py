@@ -2,10 +2,10 @@ class Letter:
     def __init__(self,letterFrom,letterTo):
         self._letterFrom = letterFrom 
         self._letterTo   = letterTo
-        self.line        = ""
+        self._line        = ""
 
     def addLine(self,line):
-        self.line+= "\n" + line
+        self.line += "\n" + line
        
         
         
