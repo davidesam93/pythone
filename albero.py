@@ -7,12 +7,10 @@ carattere= input("dammi un carattere: ")
 ampiezza= int(input("dammi un  ampiezza :  "))
 
 
-
-if ampiezza %2 == 0 :
-        while ampiezza!=0 :
-                for i in ampiezza :
-                        print (" " * ((ampiezza//2)-1) + carattere + " "*((ampiezza//2)-1))
-                        ampiezza-1
+for i in range(1, ampiezza + 1, 2):  # i va da 1 a ampiezza con passo  2 (aumento di 2, in questo caso cioè solo numeri dispari)
+    spazi = (ampiezza - i) // 2      # calcolo degli spazi a sinistra
+    riga = " " * spazi + carattere * i
+    print(riga)
 
                 
                 
