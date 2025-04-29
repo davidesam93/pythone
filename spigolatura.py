@@ -19,3 +19,27 @@ def naviga2(tag, indent):                   # Funzione ricorsiva per navigare ne
             naviga2(stag, indent + "  ")    # Richiama la funzione per quel figlio, aumentando l'indentazione
 
 naviga2(doc, "")                            # Avvia la navigazione a partire dalla radice
+
+lista=dir(bs4.element.Tag)
+for met in lista:
+  if not met.startswith("_"):               # Filtra i metodi privati
+    print(met)                             # Stampa i metodi pubblici della classe Tag                       
+
+
+
+
+def naviga3(tag, indent=""):
+    print(indent + tag.name.upper())                # Stampa il nome del tag con indentazione
+    if tag.name == "a":                             # Se il tag è un link <a>
+        print(indent + "  href:", tag.get("href"))  # Stampa il valore dell'attributo href
+
+    for stag in tag.contents:                       # Per ogni figlio del tag
+        if isinstance(stag, bs4.element.Tag):       # Se è un altro tag HTML
+            naviga3(stag, indent + "  ")            # Chiamata ricorsiva
+
+def naviga4(tag):               
+    if tag.name.upper == "A":                  # Se il tag è un link <a>                     
+        print(tag["href"])                     # Stampa il valore dell'attributo href            
+    for stag in tag.contents:                  # Per ogni figlio del tag     
+        if type(stag) == bs4.element.Tag:      # Se è un altro tag HTML
+            naviga4(stag)                     # Chiamata ricorsiva
